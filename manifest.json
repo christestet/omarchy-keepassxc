@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "chris.keepassxc",
+  "id": "christestet.keepassxc",
   "name": "KeePassXC",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "christestet",
   "license": "MIT",
   "description": "Open or focus KeePassXC from the Omarchy bar without accessing vault data or credentials.",

@@ -25,7 +25,7 @@ omarchy plugin add https://github.com/christestet/omarchy-keepassxc.git --enable
 Omarchy validates the plugin and installs it under:
 
 ```text
-~/.config/omarchy/plugins/chris.keepassxc
+~/.config/omarchy/plugins/christestet.keepassxc
 ```
 
 ## Configure a database
@@ -33,8 +33,8 @@ Omarchy validates the plugin and installs it under:
 Copy the example configuration:
 
 ```bash
-cp ~/.config/omarchy/plugins/chris.keepassxc/config.example \
-  ~/.config/omarchy/plugins/chris.keepassxc/config
+cp ~/.config/omarchy/plugins/christestet.keepassxc/config.example \
+  ~/.config/omarchy/plugins/christestet.keepassxc/config
 ```
 
 Then set the path to your local KDBX file:
@@ -53,7 +53,7 @@ The plugin defaults to the right side of the bar. Move it with Omarchy's bar
 command if desired:
 
 ```bash
-omarchy bar move chris.keepassxc --section right
+omarchy bar move christestet.keepassxc --section right
 ```
 
 Click the key icon to open KeePassXC or focus its existing window.
@@ -61,7 +61,7 @@ Click the key icon to open KeePassXC or focus its existing window.
 ## Update
 
 ```bash
-omarchy plugin update chris.keepassxc
+omarchy plugin update christestet.keepassxc
 ```
 
 See the [latest plugin version](https://github.com/christestet/omarchy-keepassxc/releases/latest)
@@ -70,7 +70,7 @@ and the complete [release history](https://github.com/christestet/omarchy-keepas
 ## Remove
 
 ```bash
-omarchy plugin remove chris.keepassxc
+omarchy plugin remove christestet.keepassxc
 ```
 
 ## Security
@@ -91,7 +91,7 @@ Learn more in the official documentation:
 Validate local changes before committing:
 
 ```bash
-omarchy plugin validate ~/.config/omarchy/plugins/chris.keepassxc
+omarchy plugin validate ~/.config/omarchy/plugins/christestet.keepassxc
 ```
 
 ## License

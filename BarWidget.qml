@@ -3,7 +3,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "chris.keepassxc"
+  moduleName: "christestet.keepassxc"
 
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
@@ -17,7 +17,7 @@ BarWidget {
     horizontalMargin: 7.5
     tooltipText: "KeePassXC"
     onPressed: function(button) {
-      root.bar.run("$HOME/.config/omarchy/plugins/chris.keepassxc/launch-keepassxc")
+      root.bar.run("$HOME/.config/omarchy/plugins/christestet.keepassxc/launch-keepassxc")
     }
   }
 }
