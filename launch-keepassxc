@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+plugin_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+config_file="$plugin_dir/config"
+database_path=""
+
+if [[ -f "$config_file" ]]; then
+  database_path="$(sed -n 's/^[[:space:]]*database_path[[:space:]]*=[[:space:]]*//p' "$config_file" | tail -n 1)"
+fi
+
+if [[ "$database_path" == '~/'* ]]; then
+  database_path="$HOME/${database_path#\~/}"
+fi
+
+if [[ -n "$database_path" && ! -f "$database_path" ]]; then
+  notify-send "KeePassXC" "Configured database not found: $database_path"
+  exit 1
+fi
+
+if [[ -n "$database_path" ]]; then
+  printf -v launch_command 'uwsm-app -- keepassxc %q' "$database_path"
+else
+  launch_command='uwsm-app -- keepassxc'
+fi
+
+exec omarchy-launch-or-focus KeePassXC "$launch_command"

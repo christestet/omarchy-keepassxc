@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "chris.keepassxc",
+  "name": "KeePassXC",
+  "version": "1.0.0",
+  "author": "christestet",
+  "license": "MIT",
+  "description": "Open or focus KeePassXC from the Omarchy bar without accessing vault data or credentials.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "KeePassXC",
+    "description": "Open or focus KeePassXC with an optional locally configured database path.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {},
+    "schema": []
+  }
+}

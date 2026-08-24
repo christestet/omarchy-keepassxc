@@ -1,0 +1,3 @@
+# Path to the KeePass database opened when KeePassXC is not already running.
+# A path beginning with ~/ is supported.
+database_path=~/Documents/example.kdbx
